@@ -15,24 +15,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="いろは仮名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBt-M0-4Mb">
-                                <rect key="frame" x="162" y="439" width="90.5" height="18"/>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="azF-C1-NfC">
+                                <rect key="frame" x="290" y="806" width="108" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Ptv-ij-fsF"/>
+                                    <constraint firstAttribute="width" constant="108" id="cED-N0-4JO"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="NBt-M0-4Mb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VHw-cp-6Q5"/>
-                            <constraint firstItem="NBt-M0-4Mb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gwN-5B-gx2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="azF-C1-NfC" secondAttribute="bottom" constant="8" id="SVJ-UE-ck8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="azF-C1-NfC" secondAttribute="trailing" constant="16" id="nog-qg-x3H"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="_creditImage" destination="azF-C1-NfC" id="U4r-RH-Y8j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="136"/>
+            <point key="canvasLocation" x="137.68115942028987" y="135.9375"/>
         </scene>
     </scenes>
 </document>

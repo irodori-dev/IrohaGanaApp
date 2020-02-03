@@ -13,6 +13,7 @@
 		DCAD7CD623E851850091C2AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAD7CD423E851850091C2AE /* Main.storyboard */; };
 		DCAD7CD823E8519B0091C2AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAD7CD723E8519B0091C2AE /* Assets.xcassets */; };
 		DCAD7CDB23E8519B0091C2AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAD7CD923E8519B0091C2AE /* LaunchScreen.storyboard */; };
+		DCAD7CE423E860CA0091C2AE /* HiraganaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD7CE323E860CA0091C2AE /* HiraganaAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DCAD7CD723E8519B0091C2AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCAD7CDA23E8519B0091C2AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCAD7CDC23E8519B0091C2AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCAD7CE323E860CA0091C2AE /* HiraganaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		DCAD7CCD23E851840091C2AE /* IrohaGanaApp */ = {
 			isa = PBXGroup;
 			children = (
+				DCAD7CE223E860540091C2AE /* API */,
 				DCAD7CCE23E851840091C2AE /* AppDelegate.swift */,
 				DCAD7CD023E851840091C2AE /* SceneDelegate.swift */,
 				DCAD7CD223E851840091C2AE /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				DCAD7CDC23E8519B0091C2AE /* Info.plist */,
 			);
 			path = IrohaGanaApp;
+			sourceTree = "<group>";
+		};
+		DCAD7CE223E860540091C2AE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				DCAD7CE323E860CA0091C2AE /* HiraganaAPI.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCAD7CD323E851840091C2AE /* ViewController.swift in Sources */,
+				DCAD7CE423E860CA0091C2AE /* HiraganaAPI.swift in Sources */,
 				DCAD7CCF23E851840091C2AE /* AppDelegate.swift in Sources */,
 				DCAD7CD123E851840091C2AE /* SceneDelegate.swift in Sources */,
 			);

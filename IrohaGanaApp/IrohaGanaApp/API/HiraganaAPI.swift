@@ -1,0 +1,80 @@
+//
+//  HiraganaAPI.swift
+//  IrohaGanaApp
+//
+//  Created by aokita on 2020/02/03.
+//  Copyright © 2020 irodori. All rights reserved.
+//
+
+import Foundation
+
+///
+/// gooラボ　ひらがな化API
+///
+/// - Note:
+/// https://labs.goo.ne.jp/api/jp/hiragana-translation/
+///
+struct HiraganaAPI {
+
+    /// ひらがな化API - URL
+    private static let _ReqUrl: String = "https://labs.goo.ne.jp/api/hiragana"
+ 
+    /// ひらがな化API - アプリケーションID
+    private static let _AppID: String = "3ace14d7b52a05c36210d7f1ecb07c72aeb6b54c53d34d0505dca6666b20cdc1"
+    
+    ///
+    /// ルビ取得
+    ///
+    public static func GetRubyString() {
+        var request: URLRequest = URLRequest(url: URL(string: HiraganaAPI._ReqUrl)!)
+        request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let postData: ReqParams = ReqParams(app_id: HiraganaAPI._AppID, request_id: "record_001", sentence: "徒然なるままに", output_type: "hiragana")
+        
+        guard let uploadData = try? JSONEncoder().encode(postData) else {
+            print("🚨 error: failed to create post data")
+            return
+        }
+        request.httpBody = uploadData
+        
+        let task: URLSessionUploadTask = URLSession.shared.uploadTask(with: request, from: uploadData) { data, response, error in
+            if let error = error {
+                print ("🚨 error: \(error)")
+                return
+            }
+            
+            guard let response: HTTPURLResponse = response as? HTTPURLResponse,
+                (200...299).contains(response.statusCode) else {
+                    print ("🚨 error: server error")
+                    return
+            }
+            
+            guard let data: Data = data, let jsonData: ResponceData = try? JSONDecoder().decode(ResponceData.self, from: data) else {
+                print("🚨 error: failed to parse json")
+                return
+            }
+            print(jsonData.converted)
+        }
+        task.resume()
+    }
+}
+
+///
+///
+///
+struct ReqParams: Codable {
+    var app_id: String
+    var request_id: String
+    var sentence: String
+    var output_type: String
+}
+
+///
+///
+///
+struct ResponceData:Codable {
+    var request_id: String
+    var output_type: String
+    var converted: String
+}
