@@ -25,35 +25,44 @@ struct HiraganaAPI {
     ///
     /// ルビ取得
     ///
-    public static func GetRubyString() {
+    public static func GetRubyString(text: String, callback: @escaping (Bool, String) -> Void) {
         var request: URLRequest = URLRequest(url: URL(string: HiraganaAPI._ReqUrl)!)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+  
+        let postData: ReqParams = ReqParams(app_id: HiraganaAPI._AppID,
+                                            request_id: "record_001",
+                                            sentence: text,
+                                            output_type: "hiragana")
         
-        let postData: ReqParams = ReqParams(app_id: HiraganaAPI._AppID, request_id: "record_001", sentence: "徒然なるままに", output_type: "hiragana")
-        
-        guard let uploadData = try? JSONEncoder().encode(postData) else {
+        guard let uploadData: Data? = try? JSONEncoder().encode(postData) else {
             print("🚨 error: failed to create post data")
+            callback(false, "")
             return
         }
         request.httpBody = uploadData
         
-        let task: URLSessionUploadTask = URLSession.shared.uploadTask(with: request, from: uploadData) { data, response, error in
+        let task: URLSessionUploadTask = URLSession.shared.uploadTask(with: request, from: uploadData){ data, response, error in
             if let error = error {
                 print ("🚨 error: \(error)")
+                callback(false, "")
                 return
             }
             
             guard let response: HTTPURLResponse = response as? HTTPURLResponse,
                 (200...299).contains(response.statusCode) else {
                     print ("🚨 error: server error")
+                    callback(false, "")
                     return
             }
             
             guard let data: Data = data, let jsonData: ResponceData = try? JSONDecoder().decode(ResponceData.self, from: data) else {
                 print("🚨 error: failed to parse json")
+                callback(false, "")
                 return
             }
+
+            callback(true, jsonData.converted)
             print(jsonData.converted)
         }
         task.resume()
