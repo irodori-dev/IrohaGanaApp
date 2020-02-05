@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC38CDA723EADCEF007B290D /* CheckRubyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC38CDA623EADCEF007B290D /* CheckRubyView.xib */; };
+		DC38CDA923EADE8B007B290D /* CheckRubyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC38CDA823EADE8B007B290D /* CheckRubyView.swift */; };
+		DC38CDAF23EAEC1E007B290D /* IrohaGanaColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC38CDAE23EAEC1E007B290D /* IrohaGanaColor.swift */; };
 		DCAD7CCF23E851840091C2AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD7CCE23E851840091C2AE /* AppDelegate.swift */; };
 		DCAD7CD123E851840091C2AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD7CD023E851840091C2AE /* SceneDelegate.swift */; };
 		DCAD7CD323E851840091C2AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD7CD223E851840091C2AE /* ViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC38CDA623EADCEF007B290D /* CheckRubyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckRubyView.xib; sourceTree = "<group>"; };
+		DC38CDA823EADE8B007B290D /* CheckRubyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckRubyView.swift; sourceTree = "<group>"; };
+		DC38CDAE23EAEC1E007B290D /* IrohaGanaColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrohaGanaColor.swift; sourceTree = "<group>"; };
 		DCAD7CCB23E851840091C2AE /* IrohaGanaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IrohaGanaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAD7CCE23E851840091C2AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCAD7CD023E851840091C2AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC38CDAD23EAEBEA007B290D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DC38CDAE23EAEC1E007B290D /* IrohaGanaColor.swift */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		DCAD7CC223E851840091C2AE = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +72,7 @@
 		DCAD7CCD23E851840091C2AE /* IrohaGanaApp */ = {
 			isa = PBXGroup;
 			children = (
+				DC38CDAD23EAEBEA007B290D /* Assets */,
 				DCAD7CE223E860540091C2AE /* API */,
 				DCAD7CCE23E851840091C2AE /* AppDelegate.swift */,
 				DCAD7CD023E851840091C2AE /* SceneDelegate.swift */,
@@ -66,6 +81,8 @@
 				DCAD7CD723E8519B0091C2AE /* Assets.xcassets */,
 				DCAD7CD923E8519B0091C2AE /* LaunchScreen.storyboard */,
 				DCAD7CDC23E8519B0091C2AE /* Info.plist */,
+				DC38CDA823EADE8B007B290D /* CheckRubyView.swift */,
+				DC38CDA623EADCEF007B290D /* CheckRubyView.xib */,
 			);
 			path = IrohaGanaApp;
 			sourceTree = "<group>";
@@ -137,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCAD7CDB23E8519B0091C2AE /* LaunchScreen.storyboard in Resources */,
+				DC38CDA723EADCEF007B290D /* CheckRubyView.xib in Resources */,
 				DCAD7CD823E8519B0091C2AE /* Assets.xcassets in Resources */,
 				DCAD7CD623E851850091C2AE /* Main.storyboard in Resources */,
 			);
@@ -152,6 +170,8 @@
 				DCAD7CD323E851840091C2AE /* ViewController.swift in Sources */,
 				DCAD7CE423E860CA0091C2AE /* HiraganaAPI.swift in Sources */,
 				DCAD7CCF23E851840091C2AE /* AppDelegate.swift in Sources */,
+				DC38CDA923EADE8B007B290D /* CheckRubyView.swift in Sources */,
+				DC38CDAF23EAEC1E007B290D /* IrohaGanaColor.swift in Sources */,
 				DCAD7CD123E851840091C2AE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
