@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC22011E23EC3C56006C12DB /* CoachMarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC22011D23EC3C56006C12DB /* CoachMarkViewController.swift */; };
+		DC22012223EC3CA3006C12DB /* CoarchMark.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC22012123EC3CA3006C12DB /* CoarchMark.storyboard */; };
 		DC38CDA723EADCEF007B290D /* CheckRubyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC38CDA623EADCEF007B290D /* CheckRubyView.xib */; };
 		DC38CDA923EADE8B007B290D /* CheckRubyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC38CDA823EADE8B007B290D /* CheckRubyView.swift */; };
 		DC38CDAF23EAEC1E007B290D /* IrohaGanaColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC38CDAE23EAEC1E007B290D /* IrohaGanaColor.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC22011D23EC3C56006C12DB /* CoachMarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachMarkViewController.swift; sourceTree = "<group>"; };
+		DC22012123EC3CA3006C12DB /* CoarchMark.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoarchMark.storyboard; sourceTree = "<group>"; };
 		DC38CDA623EADCEF007B290D /* CheckRubyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckRubyView.xib; sourceTree = "<group>"; };
 		DC38CDA823EADE8B007B290D /* CheckRubyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckRubyView.swift; sourceTree = "<group>"; };
 		DC38CDAE23EAEC1E007B290D /* IrohaGanaColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrohaGanaColor.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 				DCAD7CDC23E8519B0091C2AE /* Info.plist */,
 				DC38CDA823EADE8B007B290D /* CheckRubyView.swift */,
 				DC38CDA623EADCEF007B290D /* CheckRubyView.xib */,
+				DC22011D23EC3C56006C12DB /* CoachMarkViewController.swift */,
+				DC22012123EC3CA3006C12DB /* CoarchMark.storyboard */,
 			);
 			path = IrohaGanaApp;
 			sourceTree = "<group>";
@@ -154,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCAD7CDB23E8519B0091C2AE /* LaunchScreen.storyboard in Resources */,
+				DC22012223EC3CA3006C12DB /* CoarchMark.storyboard in Resources */,
 				DC38CDA723EADCEF007B290D /* CheckRubyView.xib in Resources */,
 				DCAD7CD823E8519B0091C2AE /* Assets.xcassets in Resources */,
 				DCAD7CD623E851850091C2AE /* Main.storyboard in Resources */,
@@ -169,6 +176,7 @@
 			files = (
 				DCAD7CD323E851840091C2AE /* ViewController.swift in Sources */,
 				DCAD7CE423E860CA0091C2AE /* HiraganaAPI.swift in Sources */,
+				DC22011E23EC3C56006C12DB /* CoachMarkViewController.swift in Sources */,
 				DCAD7CCF23E851840091C2AE /* AppDelegate.swift in Sources */,
 				DC38CDA923EADE8B007B290D /* CheckRubyView.swift in Sources */,
 				DC38CDAF23EAEC1E007B290D /* IrohaGanaColor.swift in Sources */,

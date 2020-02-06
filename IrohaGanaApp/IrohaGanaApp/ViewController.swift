@@ -48,6 +48,13 @@ class ViewController: UIViewController {
     }
     
     @objc func helpBarButtonTapped(_ sender: UIBarButtonItem) {
-        print("🐷 ----- helpBarButtonTapped")
+
+        let storyboard: UIStoryboard = UIStoryboard(name: "CoarchMark", bundle: nil)
+        let coarchMark: CoarchMarkViewController = storyboard.instantiateViewController(identifier: "coarchMark") as! CoarchMarkViewController
+        
+        coarchMark.modalPresentationStyle = .overFullScreen
+        coarchMark.modalTransitionStyle = .crossDissolve
+        
+        self.present(coarchMark, animated: false, completion: nil)
     }
 }
