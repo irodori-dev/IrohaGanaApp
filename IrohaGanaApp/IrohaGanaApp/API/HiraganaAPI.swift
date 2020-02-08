@@ -36,34 +36,34 @@ struct HiraganaAPI {
                                             output_type: "hiragana")
         
         guard let uploadData: Data? = try? JSONEncoder().encode(postData) else {
-            print("🚨 error: failed to create post data")
+            IrohaGanaLog.Error("failed to create post data")
             callback(false, "")
             return
         }
         request.httpBody = uploadData
         
         let task: URLSessionUploadTask = URLSession.shared.uploadTask(with: request, from: uploadData){ data, response, error in
-            if let error = error {
-                print ("🚨 error: \(error)")
+            if let error: Error = error {
+                IrohaGanaLog.Error(error)
                 callback(false, "")
                 return
             }
             
             guard let response: HTTPURLResponse = response as? HTTPURLResponse,
                 response.statusCode == 200 else {
-                    print ("🚨 error: server error")
+                    IrohaGanaLog.Error("server error")
                     callback(false, "")
                     return
             }
             
             guard let data: Data = data, let jsonData: ResponceData = try? JSONDecoder().decode(ResponceData.self, from: data) else {
-                print("🚨 error: failed to parse json")
+                IrohaGanaLog.Error("failed to parse json")
                 callback(false, "")
                 return
             }
 
             callback(true, jsonData.converted)
-            print(jsonData.converted)
+            IrohaGanaLog.Debug(jsonData.converted)
         }
         task.resume()
     }

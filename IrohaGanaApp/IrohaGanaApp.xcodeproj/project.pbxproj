@@ -19,6 +19,7 @@
 		DCAD7CD823E8519B0091C2AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAD7CD723E8519B0091C2AE /* Assets.xcassets */; };
 		DCAD7CDB23E8519B0091C2AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAD7CD923E8519B0091C2AE /* LaunchScreen.storyboard */; };
 		DCAD7CE423E860CA0091C2AE /* HiraganaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD7CE323E860CA0091C2AE /* HiraganaAPI.swift */; };
+		DCB4994723EE74B600A3D46F /* IrohaGanaLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB4994623EE74B600A3D46F /* IrohaGanaLog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		DCAD7CDA23E8519B0091C2AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCAD7CDC23E8519B0091C2AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCAD7CE323E860CA0091C2AE /* HiraganaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaAPI.swift; sourceTree = "<group>"; };
+		DCB4994623EE74B600A3D46F /* IrohaGanaLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrohaGanaLog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				DC38CDA623EADCEF007B290D /* CheckRubyView.xib */,
 				DC22011D23EC3C56006C12DB /* CoachMarkViewController.swift */,
 				DC22012123EC3CA3006C12DB /* CoarchMark.storyboard */,
+				DCB4994523EE748800A3D46F /* Log */,
 				DCAD7CD723E8519B0091C2AE /* Assets.xcassets */,
 				DCAD7CD923E8519B0091C2AE /* LaunchScreen.storyboard */,
 				DCAD7CDC23E8519B0091C2AE /* Info.plist */,
@@ -99,6 +102,14 @@
 				DCAD7CE323E860CA0091C2AE /* HiraganaAPI.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		DCB4994523EE748800A3D46F /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				DCB4994623EE74B600A3D46F /* IrohaGanaLog.swift */,
+			);
+			path = Log;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCAD7CD323E851840091C2AE /* ViewController.swift in Sources */,
+				DCB4994723EE74B600A3D46F /* IrohaGanaLog.swift in Sources */,
 				DCAD7CE423E860CA0091C2AE /* HiraganaAPI.swift in Sources */,
 				DC22011E23EC3C56006C12DB /* CoachMarkViewController.swift in Sources */,
 				DCAD7CCF23E851840091C2AE /* AppDelegate.swift in Sources */,
