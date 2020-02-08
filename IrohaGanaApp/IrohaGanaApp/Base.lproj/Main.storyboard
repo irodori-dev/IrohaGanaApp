@@ -31,6 +31,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="いろは仮名" id="iVv-nb-0iy"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="_checkRubyView" destination="a9H-gw-hgC" id="UzE-k3-me8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

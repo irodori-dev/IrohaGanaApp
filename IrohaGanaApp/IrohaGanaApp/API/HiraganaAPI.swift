@@ -25,7 +25,7 @@ struct HiraganaAPI {
     ///
     /// ルビ取得
     ///
-    public static func GetRubyString(text: String, callback: @escaping (Bool, String) -> Void) {
+    public static func RequestRuby(text: String, callback: @escaping (Bool, String) -> Void) {
         var request: URLRequest = URLRequest(url: URL(string: HiraganaAPI._ReqUrl)!)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")

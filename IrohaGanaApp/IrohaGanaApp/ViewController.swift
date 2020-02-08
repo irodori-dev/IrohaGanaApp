@@ -11,10 +11,11 @@ import UIKit
 ///
 /// メイン画面
 ///
-class ViewController: UIViewController {
+class ViewController: UIViewController, RubyViewDelegate {
     
     //MARK: -- IBOutlet ------------------------------
 
+    @IBOutlet weak var _checkRubyView: CheckRubyView!
     
     //MARK: -- lifecycle ------------------------------
 
@@ -23,6 +24,23 @@ class ViewController: UIViewController {
         self._setupViews()
     }
 
+    
+    //MARK: -- public method ------------------------------
+
+    func requestRuby(text: String) {
+
+        HiraganaAPI.RequestRuby(
+            text: text,
+            callback: {[weak self] (success:Bool, ruby: String) -> Void in
+                if success == true {
+                    DispatchQueue.main.async {
+                        self?._checkRubyView.showRuby(ruby: ruby)
+                    }
+                }
+            }
+        )
+    }
+    
     //MARK: -- private method ------------------------------
 
     private func _setupViews() {
@@ -45,6 +63,8 @@ class ViewController: UIViewController {
             target: self,
             action: #selector(helpBarButtonTapped(_:))
         )
+        
+        self._checkRubyView.delegate = self
     }
     
     @objc func helpBarButtonTapped(_ sender: UIBarButtonItem) {

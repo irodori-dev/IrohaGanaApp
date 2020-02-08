@@ -82,13 +82,13 @@
 				DCAD7CD023E851840091C2AE /* SceneDelegate.swift */,
 				DCAD7CD223E851840091C2AE /* ViewController.swift */,
 				DCAD7CD423E851850091C2AE /* Main.storyboard */,
-				DCAD7CD723E8519B0091C2AE /* Assets.xcassets */,
-				DCAD7CD923E8519B0091C2AE /* LaunchScreen.storyboard */,
-				DCAD7CDC23E8519B0091C2AE /* Info.plist */,
 				DC38CDA823EADE8B007B290D /* CheckRubyView.swift */,
 				DC38CDA623EADCEF007B290D /* CheckRubyView.xib */,
 				DC22011D23EC3C56006C12DB /* CoachMarkViewController.swift */,
 				DC22012123EC3CA3006C12DB /* CoarchMark.storyboard */,
+				DCAD7CD723E8519B0091C2AE /* Assets.xcassets */,
+				DCAD7CD923E8519B0091C2AE /* LaunchScreen.storyboard */,
+				DCAD7CDC23E8519B0091C2AE /* Info.plist */,
 			);
 			path = IrohaGanaApp;
 			sourceTree = "<group>";

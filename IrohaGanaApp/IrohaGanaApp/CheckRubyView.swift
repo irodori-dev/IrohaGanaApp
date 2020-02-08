@@ -8,6 +8,17 @@
 
 import UIKit
 
+//
+//
+//
+protocol RubyViewDelegate: AnyObject {
+    func requestRuby(text: String)
+}
+
+
+//
+// ルビ表示.
+//
 class CheckRubyView: UIView {
 
     //MARK: -- IBOutlet ------------------------------
@@ -24,6 +35,10 @@ class CheckRubyView: UIView {
     
     @IBOutlet weak var _creditImage: UIImageView!
 
+    //MARK: -- properties ------------------------------
+
+    weak var delegate: RubyViewDelegate? = nil
+    
     
     //MARK: -- lifecycle ------------------------------
 
@@ -96,17 +111,11 @@ class CheckRubyView: UIView {
 
     @objc private func _doneButtonTapped() {
         self.endEditing(true)
-        
-        HiraganaAPI.GetRubyString(
-            text: _inputTextView.text,
-            callback: {[weak self] (success:Bool, resultText: String) -> Void in
-                if success == true {
-                    DispatchQueue.main.async {
-                        self?._rubyTextView.text = resultText
-                    }
-                }
-            }
-        )
+        self.delegate?.requestRuby(text: self._inputTextView.text)
+    }    
+    
+    public func showRuby(ruby: String) {
+        self._rubyTextView.text = ruby
     }
 }
 
