@@ -36,10 +36,30 @@ class ViewController: UIViewController, RubyViewDelegate {
                     DispatchQueue.main.async {
                         self?._checkRubyView.showRuby(ruby: ruby)
                     }
+                } else {
+                    DispatchQueue.main.async {
+                        self?._showAlert(title: "エラー", message: "ルビの取得に失敗しました")
+                    }
                 }
             }
         )
     }
+
+    private func _showAlert(title:String, message:String) {
+        let alertController = UIAlertController(
+            title: "",
+            message: message,
+            preferredStyle: .alert
+        )
+        alertController.addAction(
+            UIAlertAction(
+                title: "OK",
+                style: .default,
+                handler: nil)
+        )
+        self.present(alertController, animated: true)
+    }
+
     
     //MARK: -- private method ------------------------------
 

@@ -50,7 +50,7 @@ struct HiraganaAPI {
             }
             
             guard let response: HTTPURLResponse = response as? HTTPURLResponse,
-                (200...299).contains(response.statusCode) else {
+                response.statusCode == 200 else {
                     print ("🚨 error: server error")
                     callback(false, "")
                     return
