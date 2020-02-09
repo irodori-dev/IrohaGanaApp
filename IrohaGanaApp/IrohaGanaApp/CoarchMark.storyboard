@@ -40,12 +40,12 @@
                                                 </state>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBk-u8-Svr">
-                                                <rect key="frame" x="36" y="60" width="334" height="28"/>
+                                                <rect key="frame" x="36" y="60" width="334" height="23.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="↖︎">
                                                         <attributes>
                                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <font key="NSFont" size="24" name="LucidaGrande-Bold"/>
+                                                            <font key="NSFont" size="20" name="LucidaGrande-Bold"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             <integer key="NSUnderline" value="1"/>
                                                         </attributes>
@@ -53,7 +53,7 @@
                                                     <fragment content="① 文章を入力して..">
                                                         <attributes>
                                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <font key="NSFont" size="24" name="HiraginoSans-W6"/>
+                                                            <font key="NSFont" size="20" name="HiraginoSans-W6"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             <integer key="NSUnderline" value="1"/>
                                                         </attributes>
@@ -62,12 +62,12 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfS-Z7-5Ss">
-                                                <rect key="frame" x="12" y="221.5" width="358" height="24"/>
+                                                <rect key="frame" x="12" y="225.5" width="358" height="20"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="② タップ！ ⤵︎">
                                                         <attributes>
                                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <font key="NSFont" size="24" name="HiraginoSans-W6"/>
+                                                            <font key="NSFont" size="20" name="HiraginoSans-W6"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             <integer key="NSUnderline" value="1"/>
                                                         </attributes>
@@ -100,12 +100,12 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bX9-ea-Pgy">
-                                        <rect key="frame" x="28" y="423.5" width="358" height="24"/>
+                                        <rect key="frame" x="28" y="423.5" width="358" height="20"/>
                                         <attributedString key="attributedText">
                                             <fragment content="↑③ ルビが表示されるよ♪">
                                                 <attributes>
                                                     <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <font key="NSFont" size="24" name="HiraginoSans-W6"/>
+                                                    <font key="NSFont" size="20" name="HiraginoSans-W6"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     <integer key="NSUnderline" value="1"/>
                                                 </attributes>
