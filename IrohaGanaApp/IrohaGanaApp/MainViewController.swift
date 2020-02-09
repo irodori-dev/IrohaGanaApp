@@ -11,7 +11,7 @@ import UIKit
 ///
 /// メイン画面
 ///
-class ViewController: UIViewController, RubyViewDelegate {
+class MainViewController: UIViewController, RubyViewDelegate {
     
     //MARK: -- IBOutlet ------------------------------
 
