@@ -17,6 +17,10 @@ class ViewController: UIViewController, RubyViewDelegate {
 
     @IBOutlet weak var _checkRubyView: CheckRubyView!
     
+    //MARK: -- properties ------------------------------
+
+    private var _activityIndicatorView = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
+    
     //MARK: -- lifecycle ------------------------------
 
     override func viewDidLoad() {
@@ -32,16 +36,20 @@ class ViewController: UIViewController, RubyViewDelegate {
     //MARK: -- public method ------------------------------
 
     func requestRuby(text: String) {
+        self.view.isUserInteractionEnabled = false
+        self._activityIndicatorView.startAnimating()
 
         HiraganaAPI.RequestRuby(
             text: text,
             callback: {[weak self] (success:Bool, ruby: String) -> Void in
-                if success == true {
-                    DispatchQueue.main.async {
+                
+                DispatchQueue.main.async {
+                    self?._activityIndicatorView.stopAnimating()
+                    self?.view.isUserInteractionEnabled = true
+
+                    if success == true {
                         self?._checkRubyView.showRuby(ruby: ruby)
-                    }
-                } else {
-                    DispatchQueue.main.async {
+                    } else {
                         self?._showAlert(title: "エラー", message: "ルビの取得に失敗しました")
                     }
                 }
@@ -88,6 +96,10 @@ class ViewController: UIViewController, RubyViewDelegate {
             action: #selector(coachMarkButtonTapped(_:))
         )
         
+        self._activityIndicatorView.center = view.center
+        self._activityIndicatorView.color = IrohaGanaColor.SHINKU
+        self.view.addSubview(self._activityIndicatorView)
+
         self._checkRubyView.delegate = self
     }
     
