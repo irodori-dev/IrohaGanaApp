@@ -14,17 +14,159 @@
                     <view key="view" alpha="0.80000000000000004" contentMode="scaleToFill" id="dNM-Y6-IUB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z7w-lZ-fvb">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qor-fl-YcY">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Qk-gG-PLB">
+                                        <rect key="frame" x="16" y="12" width="382" height="309.5"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="以呂波耳本へ止" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qXE-Mk-DCo">
+                                                <rect key="frame" x="12" y="12" width="358" height="265.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6o-gL-DrB">
+                                                <rect key="frame" x="291" y="281.5" width="83" height="20"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <state key="normal" title="ひらがな化" image="square.and.pencil" catalog="system">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBk-u8-Svr">
+                                                <rect key="frame" x="12" y="60" width="358" height="28"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="↖︎">
+                                                        <attributes>
+                                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" size="24" name="LucidaGrande-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            <integer key="NSUnderline" value="1"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="① 文章を入力して..">
+                                                        <attributes>
+                                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" size="24" name="HiraginoSans-W6"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            <integer key="NSUnderline" value="1"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfS-Z7-5Ss">
+                                                <rect key="frame" x="12" y="221.5" width="358" height="24"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="② タップ！ ⤵︎">
+                                                        <attributes>
+                                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" size="24" name="HiraginoSans-W6"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            <integer key="NSUnderline" value="1"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="h6o-gL-DrB" firstAttribute="top" secondItem="qXE-Mk-DCo" secondAttribute="bottom" constant="4" id="60h-hM-NKH"/>
+                                            <constraint firstAttribute="trailing" secondItem="VBk-u8-Svr" secondAttribute="trailing" constant="12" id="GeK-Mz-5pD"/>
+                                            <constraint firstAttribute="trailing" secondItem="TfS-Z7-5Ss" secondAttribute="trailing" constant="12" id="HzI-xn-98K"/>
+                                            <constraint firstItem="TfS-Z7-5Ss" firstAttribute="leading" secondItem="5Qk-gG-PLB" secondAttribute="leading" constant="12" id="Sbf-tT-IQB"/>
+                                            <constraint firstItem="qXE-Mk-DCo" firstAttribute="top" secondItem="5Qk-gG-PLB" secondAttribute="top" constant="12" id="TKV-Kt-u1e"/>
+                                            <constraint firstItem="VBk-u8-Svr" firstAttribute="leading" secondItem="5Qk-gG-PLB" secondAttribute="leading" constant="12" id="WfJ-Xp-65o"/>
+                                            <constraint firstItem="qXE-Mk-DCo" firstAttribute="leading" secondItem="5Qk-gG-PLB" secondAttribute="leading" constant="12" id="aN0-0c-eGc"/>
+                                            <constraint firstItem="VBk-u8-Svr" firstAttribute="top" secondItem="qXE-Mk-DCo" secondAttribute="top" constant="48" id="d3F-Ep-zoy"/>
+                                            <constraint firstItem="h6o-gL-DrB" firstAttribute="top" secondItem="TfS-Z7-5Ss" secondAttribute="bottom" constant="36" id="f7o-dU-7sR"/>
+                                            <constraint firstAttribute="trailing" secondItem="qXE-Mk-DCo" secondAttribute="trailing" constant="12" id="fon-bt-R4E"/>
+                                            <constraint firstAttribute="trailing" secondItem="h6o-gL-DrB" secondAttribute="trailing" constant="8" id="tDc-nb-g9R"/>
+                                            <constraint firstItem="TfS-Z7-5Ss" firstAttribute="top" relation="greaterThanOrEqual" secondItem="VBk-u8-Svr" secondAttribute="bottom" priority="750" constant="36" id="ucW-kv-3PS"/>
+                                            <constraint firstAttribute="bottom" secondItem="h6o-gL-DrB" secondAttribute="bottom" constant="8" id="wt3-GJ-o7A"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="　" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3IF-u5-Mo9">
+                                        <rect key="frame" x="24" y="325.5" width="366" height="14"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="いろはにほへと" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ea-kD-SCB">
+                                        <rect key="frame" x="28" y="367.5" width="358" height="18"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bX9-ea-Pgy">
+                                        <rect key="frame" x="28" y="421.5" width="358" height="24"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="③ ルビが表示されるよ♪">
+                                                <attributes>
+                                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="24" name="HiraginoSans-W6"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="bX9-ea-Pgy" secondAttribute="bottom" priority="750" id="477-cV-i3W"/>
+                                    <constraint firstItem="bX9-ea-Pgy" firstAttribute="leading" secondItem="qor-fl-YcY" secondAttribute="leading" constant="28" id="8f9-Zn-OUU"/>
+                                    <constraint firstItem="5Qk-gG-PLB" firstAttribute="leading" secondItem="qor-fl-YcY" secondAttribute="leading" constant="16" id="BuC-zK-Vmk"/>
+                                    <constraint firstItem="5Qk-gG-PLB" firstAttribute="top" secondItem="qor-fl-YcY" secondAttribute="top" constant="12" id="Hkr-qR-QK5"/>
+                                    <constraint firstItem="6Ea-kD-SCB" firstAttribute="top" secondItem="3IF-u5-Mo9" secondAttribute="bottom" constant="28" id="JnF-tt-RKN"/>
+                                    <constraint firstItem="bX9-ea-Pgy" firstAttribute="top" secondItem="6Ea-kD-SCB" secondAttribute="bottom" constant="36" id="YaG-KG-Rhg"/>
+                                    <constraint firstItem="3IF-u5-Mo9" firstAttribute="leading" secondItem="qor-fl-YcY" secondAttribute="leading" constant="24" id="a1q-HN-r5h"/>
+                                    <constraint firstAttribute="trailing" secondItem="5Qk-gG-PLB" secondAttribute="trailing" constant="16" id="eSs-tN-7be"/>
+                                    <constraint firstAttribute="trailing" secondItem="bX9-ea-Pgy" secondAttribute="trailing" constant="28" id="kdP-xh-W31"/>
+                                    <constraint firstAttribute="trailing" secondItem="3IF-u5-Mo9" secondAttribute="trailing" constant="24" id="llg-eh-PKn"/>
+                                    <constraint firstItem="3IF-u5-Mo9" firstAttribute="top" secondItem="5Qk-gG-PLB" secondAttribute="bottom" constant="4" id="nMK-w3-XUr"/>
+                                    <constraint firstItem="5Qk-gG-PLB" firstAttribute="height" secondItem="qor-fl-YcY" secondAttribute="height" multiplier="0.4" id="pY3-kB-B7K"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Ea-kD-SCB" secondAttribute="trailing" constant="28" id="rtS-Tx-5pF"/>
+                                    <constraint firstItem="6Ea-kD-SCB" firstAttribute="leading" secondItem="qor-fl-YcY" secondAttribute="leading" constant="28" id="tuw-EM-Z8V"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qor-fl-YcY" firstAttribute="leading" secondItem="w38-kj-hce" secondAttribute="leading" id="0If-AE-4Ul"/>
+                            <constraint firstItem="qor-fl-YcY" firstAttribute="top" secondItem="Z7w-lZ-fvb" secondAttribute="bottom" id="EKN-Rs-a7i"/>
+                            <constraint firstItem="Z7w-lZ-fvb" firstAttribute="top" secondItem="w38-kj-hce" secondAttribute="top" id="Icn-Ev-cTA"/>
+                            <constraint firstItem="w38-kj-hce" firstAttribute="bottom" secondItem="qor-fl-YcY" secondAttribute="bottom" id="JyV-4U-Wvc"/>
+                            <constraint firstItem="Z7w-lZ-fvb" firstAttribute="leading" secondItem="w38-kj-hce" secondAttribute="leading" id="NZZ-P3-Fum"/>
+                            <constraint firstItem="w38-kj-hce" firstAttribute="trailing" secondItem="qor-fl-YcY" secondAttribute="trailing" id="hXr-3a-qXn"/>
+                            <constraint firstItem="Z7w-lZ-fvb" firstAttribute="trailing" secondItem="w38-kj-hce" secondAttribute="trailing" id="lfK-uI-jfN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="w38-kj-hce"/>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <outlet property="_baseView" destination="dNM-Y6-IUB" id="KTd-LT-3Yc"/>
+                        <outlet property="_baseView" destination="dNM-Y6-IUB" id="SYD-Zf-qSA"/>
+                        <outlet property="_inputTextArea" destination="5Qk-gG-PLB" id="mHv-ki-4BE"/>
+                        <outlet property="_navigationBar" destination="Z7w-lZ-fvb" id="cPy-xL-ABO"/>
+                        <outlet property="_rubyButton" destination="h6o-gL-DrB" id="Ukg-E7-Uh5"/>
+                        <outlet property="_rubyTextView" destination="qXE-Mk-DCo" id="RjH-lq-gQN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="joq-eA-iTv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="191" y="110"/>
+            <point key="canvasLocation" x="189.85507246376812" y="109.82142857142857"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="square.and.pencil" catalog="system" width="64" height="58"/>
+    </resources>
 </document>

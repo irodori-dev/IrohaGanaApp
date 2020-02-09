@@ -81,14 +81,13 @@ class ViewController: UIViewController, RubyViewDelegate {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(
             barButtonSystemItem: UIBarButtonItem.SystemItem.bookmarks,
             target: self,
-            action: #selector(helpBarButtonTapped(_:))
+            action: #selector(coachMarkButtonTapped(_:))
         )
         
         self._checkRubyView.delegate = self
     }
     
-    @objc func helpBarButtonTapped(_ sender: UIBarButtonItem) {
-
+    private func _showCoachMark()  {
         let storyboard: UIStoryboard = UIStoryboard(name: "CoarchMark", bundle: nil)
         let coarchMark: CoarchMarkViewController = storyboard.instantiateViewController(identifier: "coarchMark") as! CoarchMarkViewController
         
@@ -96,5 +95,9 @@ class ViewController: UIViewController, RubyViewDelegate {
         coarchMark.modalTransitionStyle = .crossDissolve
         
         self.present(coarchMark, animated: false, completion: nil)
+    }
+    
+    @objc func coachMarkButtonTapped(_ sender: UIBarButtonItem) {
+        self._showCoachMark()
     }
 }
