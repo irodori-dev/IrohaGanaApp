@@ -77,24 +77,18 @@ class ViewController: UIViewController, RubyViewDelegate {
 
     private func _setupViews() {
 
-        self.navigationController?.navigationBar.barTintColor = IrohaGanaColor.SHINKU
-        self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar.barTintColor = UIColor.white
+        self.navigationController?.navigationBar.tintColor = IrohaGanaColor.SHINKU
         self.navigationController?.navigationBar.titleTextAttributes = [
-            NSAttributedString.Key.font: UIFont(name: "HiraKakuProN-W6", size: 18) ?? UIFont.systemFont(ofSize: 18),
-            NSAttributedString.Key.foregroundColor:UIColor.white
+            NSAttributedString.Key.font: UIFont(name: "HiraKakuProN-W6", size: 16) ?? UIFont.systemFont(ofSize: 16),
+            NSAttributedString.Key.foregroundColor:IrohaGanaColor.SHINKU
         ]
-//        self.navigationController?.navigationBar.barTintColor = UIColor.white
-//        self.navigationController?.navigationBar.tintColor = IrohaGanaColor.SHINKU
-//        self.navigationController?.navigationBar.titleTextAttributes = [
-//            NSAttributedString.Key.font: UIFont(name: "HiraKakuProN-W6", size: 18) ?? UIFont.systemFont(ofSize: 18),
-//            NSAttributedString.Key.foregroundColor:IrohaGanaColor.SHINKU
-//        ]
-
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(
-            barButtonSystemItem: UIBarButtonItem.SystemItem.bookmarks,
-            target: self,
-            action: #selector(coachMarkButtonTapped(_:))
-        )
+        
+        let coarchMarkButton: UIButton = UIButton.init(frame: CGRect.init(x: 0, y: 0, width: 44.0, height: 44.0))
+        coarchMarkButton.tintColor = IrohaGanaColor.SHINKU
+        coarchMarkButton.setImage(UIImage.init(systemName: "info.circle"), for: UIControl.State.normal)
+        coarchMarkButton.addTarget(self,action: #selector(self.coachMarkButtonTapped(_ :)),for: .touchUpInside)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: coarchMarkButton)
         
         self._activityIndicatorView.center = view.center
         self._activityIndicatorView.color = IrohaGanaColor.SHINKU
