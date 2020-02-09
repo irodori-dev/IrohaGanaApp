@@ -22,8 +22,12 @@ class ViewController: UIViewController, RubyViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self._setupViews()
-    }
 
+        if UserDefaults.standard.bool(forKey: "is_show_coachmark") == false {
+            UserDefaults.standard.set(true, forKey: "is_show_coachmark")
+            self._showCoachMark()
+        }
+    }
     
     //MARK: -- public method ------------------------------
 
