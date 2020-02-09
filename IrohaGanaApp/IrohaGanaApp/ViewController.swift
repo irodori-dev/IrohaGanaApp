@@ -50,13 +50,28 @@ class ViewController: UIViewController, RubyViewDelegate {
                     if success == true {
                         self?._checkRubyView.showRuby(ruby: ruby)
                     } else {
-                        self?._showAlert(title: "エラー", message: "ルビの取得に失敗しました")
+                        self?.showAlert(title: "エラー", message: "ルビの取得に失敗しました")
                     }
                 }
             }
         )
     }
 
+    func showAlert(title: String, message: String) {
+        let alertController = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: .alert
+        )
+        alertController.addAction(
+            UIAlertAction(
+                title: "OK",
+                style: .default,
+                handler: nil)
+        )
+        self.present(alertController, animated: true)
+    }
+    
     //MARK: -- private method ------------------------------
 
     private func _setupViews() {
@@ -80,22 +95,7 @@ class ViewController: UIViewController, RubyViewDelegate {
 
         self._checkRubyView.delegate = self
     }
-    
-    private func _showAlert(title: String, message: String) {
-        let alertController = UIAlertController(
-            title: title,
-            message: message,
-            preferredStyle: .alert
-        )
-        alertController.addAction(
-            UIAlertAction(
-                title: "OK",
-                style: .default,
-                handler: nil)
-        )
-        self.present(alertController, animated: true)
-    }
-    
+ 
     private func _showCoachMark()  {
         let storyboard: UIStoryboard = UIStoryboard(name: "CoarchMark", bundle: nil)
         let coarchMark: CoarchMarkViewController = storyboard.instantiateViewController(identifier: "coarchMark") as! CoarchMarkViewController

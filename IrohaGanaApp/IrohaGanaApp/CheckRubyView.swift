@@ -9,10 +9,11 @@
 import UIKit
 
 //
-// delegate - ルビ取得リクエスト
+// delegate
 //
 protocol RubyViewDelegate: AnyObject {
     func requestRuby(text: String)
+    func showAlert(title: String, message: String)
 }
 
 //
@@ -157,6 +158,7 @@ class CheckRubyView: UIView {
         self._rubyTextView.text = ""
 
         guard let text: String = text, text.isEmpty==false else {
+            self.delegate?.showAlert(title: "", message: "文字を入力してください")
             IrohaGanaLog.Debug("no text.")
             return
         }
