@@ -39,26 +39,10 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBk-u8-Svr">
-                                                <rect key="frame" x="12" y="60" width="358" height="28"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="↖︎">
-                                                        <attributes>
-                                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <font key="NSFont" size="24" name="LucidaGrande-Bold"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            <integer key="NSUnderline" value="1"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content="① 文章を入力して..">
-                                                        <attributes>
-                                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <font key="NSFont" size="24" name="HiraginoSans-W6"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            <integer key="NSUnderline" value="1"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="↖︎① 文章を入力して.." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBk-u8-Svr">
+                                                <rect key="frame" x="36" y="60" width="334" height="24"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="24"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfS-Z7-5Ss">
@@ -83,7 +67,7 @@
                                             <constraint firstAttribute="trailing" secondItem="TfS-Z7-5Ss" secondAttribute="trailing" constant="12" id="HzI-xn-98K"/>
                                             <constraint firstItem="TfS-Z7-5Ss" firstAttribute="leading" secondItem="5Qk-gG-PLB" secondAttribute="leading" constant="12" id="Sbf-tT-IQB"/>
                                             <constraint firstItem="qXE-Mk-DCo" firstAttribute="top" secondItem="5Qk-gG-PLB" secondAttribute="top" constant="12" id="TKV-Kt-u1e"/>
-                                            <constraint firstItem="VBk-u8-Svr" firstAttribute="leading" secondItem="5Qk-gG-PLB" secondAttribute="leading" constant="12" id="WfJ-Xp-65o"/>
+                                            <constraint firstItem="VBk-u8-Svr" firstAttribute="leading" secondItem="5Qk-gG-PLB" secondAttribute="leading" constant="36" id="WfJ-Xp-65o"/>
                                             <constraint firstItem="qXE-Mk-DCo" firstAttribute="leading" secondItem="5Qk-gG-PLB" secondAttribute="leading" constant="12" id="aN0-0c-eGc"/>
                                             <constraint firstItem="VBk-u8-Svr" firstAttribute="top" secondItem="qXE-Mk-DCo" secondAttribute="top" constant="48" id="d3F-Ep-zoy"/>
                                             <constraint firstItem="h6o-gL-DrB" firstAttribute="top" secondItem="TfS-Z7-5Ss" secondAttribute="bottom" constant="36" id="f7o-dU-7sR"/>
@@ -109,7 +93,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bX9-ea-Pgy">
                                         <rect key="frame" x="28" y="421.5" width="358" height="24"/>
                                         <attributedString key="attributedText">
-                                            <fragment content="③ ルビが表示されるよ♪">
+                                            <fragment content="↑③ ルビが表示されるよ♪">
                                                 <attributes>
                                                     <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <font key="NSFont" size="24" name="HiraginoSans-W6"/>
