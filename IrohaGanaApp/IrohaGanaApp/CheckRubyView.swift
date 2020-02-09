@@ -9,12 +9,11 @@
 import UIKit
 
 //
-//
+// delegate - ルビ取得リクエスト
 //
 protocol RubyViewDelegate: AnyObject {
     func requestRuby(text: String)
 }
-
 
 //
 // ルビ表示.
@@ -23,28 +22,27 @@ class CheckRubyView: UIView {
 
     //MARK: -- IBOutlet ------------------------------
 
-    @IBOutlet weak var _inputTextArea: UIView!
+    @IBOutlet private weak var _inputTextArea: UIView!
 
-    @IBOutlet weak var _inputTextView: UITextView!
+    @IBOutlet private weak var _inputTextView: UITextView!
 
-    @IBOutlet weak var _inputClearButton: UIButton!
+    @IBOutlet private weak var _inputClearButton: UIButton!
 
-    @IBOutlet weak var _rubyButton: UIButton!
+    @IBOutlet private weak var _rubyButton: UIButton!
 
-    @IBOutlet weak var _countLabel: UILabel!
+    @IBOutlet private weak var _countLabel: UILabel!
 
-    @IBOutlet weak var _outputTextArea: UIView!
+    @IBOutlet private weak var _outputTextArea: UIView!
 
-    @IBOutlet weak var _outputClearButton: UIButton!
+    @IBOutlet private weak var _outputClearButton: UIButton!
 
-    @IBOutlet weak var _rubyTextView: UITextView!
+    @IBOutlet private weak var _rubyTextView: UITextView!
     
-    @IBOutlet weak var _creditImage: UIImageView!
+    @IBOutlet private weak var _creditImage: UIImageView!
 
     //MARK: -- properties ------------------------------
 
     weak var delegate: RubyViewDelegate? = nil
-    
     
     //MARK: -- lifecycle ------------------------------
 
@@ -57,7 +55,6 @@ class CheckRubyView: UIView {
         super.init(coder: aDecoder)!
         self._loadNib()
     }
-    
     
     //MARK: -- IBAction ------------------------------
 
@@ -170,4 +167,3 @@ class CheckRubyView: UIView {
         self._requestRuby(text: self._inputTextView.text)
     }
 }
-

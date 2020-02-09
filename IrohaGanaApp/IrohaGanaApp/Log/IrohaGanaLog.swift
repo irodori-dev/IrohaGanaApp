@@ -8,6 +8,9 @@
 
 import Foundation
 
+//
+// アプリログ.
+//
 struct IrohaGanaLog {
 
     static func Error(_ log: Any = "", function: String = #function, file: String = #file, line: Int = #line) {

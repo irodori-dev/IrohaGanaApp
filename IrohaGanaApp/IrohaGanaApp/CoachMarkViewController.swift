@@ -16,11 +16,14 @@ class CoarchMarkViewController: UIViewController, UIGestureRecognizerDelegate {
     //MARK: -- IBOutlet ------------------------------
 
     @IBOutlet var _baseView: UIView!
-    @IBOutlet weak var _navigationBar: UINavigationBar!
 
-    @IBOutlet weak var _inputTextArea: UIView!
-    @IBOutlet weak var _rubyTextView: UITextView!
-    @IBOutlet weak var _rubyButton: UIButton!
+    @IBOutlet private weak var _navigationBar: UINavigationBar!
+
+    @IBOutlet private weak var _inputTextArea: UIView!
+
+    @IBOutlet private weak var _rubyTextView: UITextView!
+
+    @IBOutlet private weak var _rubyButton: UIButton!
     
     //MARK: -- lifecycle ------------------------------
 
@@ -28,7 +31,6 @@ class CoarchMarkViewController: UIViewController, UIGestureRecognizerDelegate {
         super.viewDidLoad()
         self._setupViews()
     }
-    
 
     //MARK: -- private method ------------------------------
 
@@ -53,9 +55,7 @@ class CoarchMarkViewController: UIViewController, UIGestureRecognizerDelegate {
         self._rubyButton.layer.borderWidth = 1.0
         self._rubyButton.layer.cornerRadius = 8.0
         self._rubyButton.contentEdgeInsets = UIEdgeInsets.init(top: 4.0, left: 4.0, bottom: 4.0, right: 4.0)
-        
         self._rubyButton.isUserInteractionEnabled = false
-
     }
     
     @objc func screenTapped(_ sender: UITapGestureRecognizer) {

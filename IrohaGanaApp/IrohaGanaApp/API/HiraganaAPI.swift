@@ -70,7 +70,7 @@ struct HiraganaAPI {
 }
 
 ///
-///
+/// ひらがな化API - リクエストパラメータ
 ///
 struct ReqParams: Codable {
     var app_id: String
@@ -80,7 +80,7 @@ struct ReqParams: Codable {
 }
 
 ///
-///
+/// ひらがな化API -  レスポンスデータ
 ///
 struct ResponceData:Codable {
     var request_id: String

@@ -15,7 +15,7 @@ class ViewController: UIViewController, RubyViewDelegate {
     
     //MARK: -- IBOutlet ------------------------------
 
-    @IBOutlet weak var _checkRubyView: CheckRubyView!
+    @IBOutlet private weak var _checkRubyView: CheckRubyView!
     
     //MARK: -- properties ------------------------------
 
@@ -57,22 +57,6 @@ class ViewController: UIViewController, RubyViewDelegate {
         )
     }
 
-    private func _showAlert(title:String, message:String) {
-        let alertController = UIAlertController(
-            title: "",
-            message: message,
-            preferredStyle: .alert
-        )
-        alertController.addAction(
-            UIAlertAction(
-                title: "OK",
-                style: .default,
-                handler: nil)
-        )
-        self.present(alertController, animated: true)
-    }
-
-    
     //MARK: -- private method ------------------------------
 
     private func _setupViews() {
@@ -95,6 +79,21 @@ class ViewController: UIViewController, RubyViewDelegate {
         self.view.addSubview(self._activityIndicatorView)
 
         self._checkRubyView.delegate = self
+    }
+    
+    private func _showAlert(title:String, message:String) {
+        let alertController = UIAlertController(
+            title: "",
+            message: message,
+            preferredStyle: .alert
+        )
+        alertController.addAction(
+            UIAlertAction(
+                title: "OK",
+                style: .default,
+                handler: nil)
+        )
+        self.present(alertController, animated: true)
     }
     
     private func _showCoachMark()  {

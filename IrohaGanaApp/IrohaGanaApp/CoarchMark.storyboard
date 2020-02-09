@@ -93,21 +93,14 @@
                                             <constraint firstAttribute="bottom" secondItem="h6o-gL-DrB" secondAttribute="bottom" constant="8" id="wt3-GJ-o7A"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="　" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3IF-u5-Mo9">
-                                        <rect key="frame" x="24" y="325.5" width="366" height="14"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="いろはにほへと" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ea-kD-SCB">
-                                        <rect key="frame" x="28" y="367.5" width="358" height="18"/>
+                                        <rect key="frame" x="28" y="369.5" width="358" height="18"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bX9-ea-Pgy">
-                                        <rect key="frame" x="28" y="421.5" width="358" height="24"/>
+                                        <rect key="frame" x="28" y="423.5" width="358" height="24"/>
                                         <attributedString key="attributedText">
                                             <fragment content="↑③ ルビが表示されるよ♪">
                                                 <attributes>
@@ -127,13 +120,10 @@
                                     <constraint firstItem="bX9-ea-Pgy" firstAttribute="leading" secondItem="qor-fl-YcY" secondAttribute="leading" constant="28" id="8f9-Zn-OUU"/>
                                     <constraint firstItem="5Qk-gG-PLB" firstAttribute="leading" secondItem="qor-fl-YcY" secondAttribute="leading" constant="16" id="BuC-zK-Vmk"/>
                                     <constraint firstItem="5Qk-gG-PLB" firstAttribute="top" secondItem="qor-fl-YcY" secondAttribute="top" constant="12" id="Hkr-qR-QK5"/>
-                                    <constraint firstItem="6Ea-kD-SCB" firstAttribute="top" secondItem="3IF-u5-Mo9" secondAttribute="bottom" constant="28" id="JnF-tt-RKN"/>
                                     <constraint firstItem="bX9-ea-Pgy" firstAttribute="top" secondItem="6Ea-kD-SCB" secondAttribute="bottom" constant="36" id="YaG-KG-Rhg"/>
-                                    <constraint firstItem="3IF-u5-Mo9" firstAttribute="leading" secondItem="qor-fl-YcY" secondAttribute="leading" constant="24" id="a1q-HN-r5h"/>
                                     <constraint firstAttribute="trailing" secondItem="5Qk-gG-PLB" secondAttribute="trailing" constant="16" id="eSs-tN-7be"/>
                                     <constraint firstAttribute="trailing" secondItem="bX9-ea-Pgy" secondAttribute="trailing" constant="28" id="kdP-xh-W31"/>
-                                    <constraint firstAttribute="trailing" secondItem="3IF-u5-Mo9" secondAttribute="trailing" constant="24" id="llg-eh-PKn"/>
-                                    <constraint firstItem="3IF-u5-Mo9" firstAttribute="top" secondItem="5Qk-gG-PLB" secondAttribute="bottom" constant="4" id="nMK-w3-XUr"/>
+                                    <constraint firstItem="6Ea-kD-SCB" firstAttribute="top" secondItem="5Qk-gG-PLB" secondAttribute="bottom" constant="48" id="m5F-Qs-fOj"/>
                                     <constraint firstItem="5Qk-gG-PLB" firstAttribute="height" secondItem="qor-fl-YcY" secondAttribute="height" multiplier="0.4" id="pY3-kB-B7K"/>
                                     <constraint firstAttribute="trailing" secondItem="6Ea-kD-SCB" secondAttribute="trailing" constant="28" id="rtS-Tx-5pF"/>
                                     <constraint firstItem="6Ea-kD-SCB" firstAttribute="leading" secondItem="qor-fl-YcY" secondAttribute="leading" constant="28" id="tuw-EM-Z8V"/>

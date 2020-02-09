@@ -12,6 +12,4 @@ struct IrohaGanaColor {
 
     public static var SHINKU: UIColor = UIColor.init(red: 173.0/255.0, green: 0.0/255.0, blue: 45.0/255.0, alpha: 1.0)
     
-//    public static var ENJI: UIColor = UIColor.init(red: 155.0/255.0, green: 0.0/255.0, blue: 63.0/255.0, alpha: 1.0)
-
 }

@@ -9,7 +9,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CheckRubyView" customModule="IrohaGanaApp" customModuleProvider="target">
             <connections>
-                <outlet property="_countLabel" destination="FzN-Bz-LHh" id="LCL-JS-lDg"/>
                 <outlet property="_creditImage" destination="ges-3l-pW8" id="2Ke-2F-k2z"/>
                 <outlet property="_inputClearButton" destination="lAh-GK-9WD" id="X27-0n-Iki"/>
                 <outlet property="_inputTextArea" destination="wUc-zN-BDq" id="Hx4-sG-6eP"/>
@@ -69,25 +68,18 @@
                                 <constraint firstItem="KcW-JS-LdN" firstAttribute="top" secondItem="wUc-zN-BDq" secondAttribute="top" id="zPD-Yc-7uw"/>
                             </constraints>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="count" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FzN-Bz-LHh">
-                            <rect key="frame" x="24" y="307" width="366" height="14"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
-                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BRe-qJ-E9Q">
-                            <rect key="frame" x="16" y="325" width="382" height="367"/>
+                            <rect key="frame" x="16" y="311" width="382" height="381"/>
                             <subviews>
                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EGH-c0-EJj">
-                                    <rect key="frame" x="0.0" y="0.0" width="382" height="337"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="351"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 </textView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yg4-MZ-umd">
-                                    <rect key="frame" x="358.5" y="341" width="19.5" height="22"/>
+                                    <rect key="frame" x="358.5" y="355" width="19.5" height="22"/>
                                     <state key="normal" image="trash" catalog="system"/>
                                     <connections>
                                         <action selector="_tappedOutputClearButton:" destination="-1" eventType="touchUpInside" id="2Vx-8Q-7zR"/>
@@ -115,19 +107,16 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="FzN-Bz-LHh" firstAttribute="leading" secondItem="BaU-r9-Gwm" secondAttribute="leading" constant="24" id="1dG-oY-pXI"/>
+                        <constraint firstItem="BRe-qJ-E9Q" firstAttribute="top" secondItem="wUc-zN-BDq" secondAttribute="bottom" constant="8" id="79p-Zi-ieP"/>
                         <constraint firstAttribute="bottom" secondItem="ges-3l-pW8" secondAttribute="bottom" constant="8" id="9Z8-yx-tFg"/>
                         <constraint firstItem="wUc-zN-BDq" firstAttribute="leading" secondItem="BaU-r9-Gwm" secondAttribute="leading" constant="16" id="F5B-6o-iWd"/>
-                        <constraint firstItem="BRe-qJ-E9Q" firstAttribute="top" secondItem="FzN-Bz-LHh" secondAttribute="bottom" constant="4" id="F6Y-Rf-BHC"/>
                         <constraint firstAttribute="trailing" secondItem="ges-3l-pW8" secondAttribute="trailing" constant="8" id="L8f-AT-kq6"/>
                         <constraint firstItem="wUc-zN-BDq" firstAttribute="top" secondItem="BaU-r9-Gwm" secondAttribute="top" constant="12" id="Nvr-ad-mxV"/>
                         <constraint firstAttribute="trailing" secondItem="BRe-qJ-E9Q" secondAttribute="trailing" constant="16" id="OIp-d7-kpg"/>
                         <constraint firstItem="BRe-qJ-E9Q" firstAttribute="leading" secondItem="BaU-r9-Gwm" secondAttribute="leading" constant="16" id="TR5-pX-cxy"/>
                         <constraint firstItem="ges-3l-pW8" firstAttribute="top" secondItem="BRe-qJ-E9Q" secondAttribute="bottom" constant="4" id="UJb-5g-Dtl"/>
-                        <constraint firstAttribute="trailing" secondItem="FzN-Bz-LHh" secondAttribute="trailing" constant="24" id="ZU0-Jp-Vyf"/>
                         <constraint firstAttribute="trailing" secondItem="wUc-zN-BDq" secondAttribute="trailing" constant="16" id="no3-6x-gVG"/>
                         <constraint firstItem="wUc-zN-BDq" firstAttribute="height" secondItem="BaU-r9-Gwm" secondAttribute="height" multiplier="0.4" id="rcc-J0-OjT"/>
-                        <constraint firstItem="FzN-Bz-LHh" firstAttribute="top" secondItem="wUc-zN-BDq" secondAttribute="bottom" constant="4" id="wuh-0t-JLw"/>
                     </constraints>
                 </view>
             </subviews>
