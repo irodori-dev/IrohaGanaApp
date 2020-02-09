@@ -156,11 +156,12 @@ class CheckRubyView: UIView {
     }
     
     private func _requestRuby(text: String?){
+        self.endEditing(true)
+
         guard let text: String = text, text.isEmpty==false else {
             IrohaGanaLog.Debug("no text.")
             return
         }
-        self.endEditing(true)
         self.delegate?.requestRuby(text: text)
     }
     
