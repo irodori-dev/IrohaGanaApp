@@ -33,45 +33,6 @@ class MainViewController: UIViewController, RubyViewDelegate {
         }
     }
     
-    //MARK: -- public method ------------------------------
-
-    func requestRuby(text: String) {
-        self.view.isUserInteractionEnabled = false
-        self._activityIndicatorView.startAnimating()
-
-        HiraganaAPI.RequestRuby(
-            text: text,
-            callback: {[weak self] (success:Bool, ruby: String) -> Void in
-                
-                DispatchQueue.main.async {
-                    self?._activityIndicatorView.stopAnimating()
-                    self?.view.isUserInteractionEnabled = true
-
-                    if success == true {
-                        self?._checkRubyView.showRuby(ruby: ruby)
-                    } else {
-                        self?.showAlert(title: "エラー", message: "ルビの取得に失敗しました")
-                    }
-                }
-            }
-        )
-    }
-
-    func showAlert(title: String, message: String) {
-        let alertController = UIAlertController(
-            title: title,
-            message: message,
-            preferredStyle: .alert
-        )
-        alertController.addAction(
-            UIAlertAction(
-                title: "OK",
-                style: .default,
-                handler: nil)
-        )
-        self.present(alertController, animated: true)
-    }
-    
     //MARK: -- private method ------------------------------
 
     private func _setupViews() {
@@ -108,5 +69,47 @@ class MainViewController: UIViewController, RubyViewDelegate {
     
     @objc func coachMarkButtonTapped(_ sender: UIBarButtonItem) {
         self._showCoachMark()
+    }
+}
+
+//MARK: -- RubyViewDelegate ------------------------------
+
+extension MainViewController {
+
+    func requestRuby(text: String) {
+        self.view.isUserInteractionEnabled = false
+        self._activityIndicatorView.startAnimating()
+
+        HiraganaAPI.RequestRuby(
+            text: text,
+            callback: {[weak self] (success:Bool, ruby: String) -> Void in
+                
+                DispatchQueue.main.async {
+                    self?._activityIndicatorView.stopAnimating()
+                    self?.view.isUserInteractionEnabled = true
+
+                    if success == true {
+                        self?._checkRubyView.showRuby(ruby: ruby)
+                    } else {
+                        self?.showAlert(title: "エラー", message: "ルビの取得に失敗しました")
+                    }
+                }
+            }
+        )
+    }
+
+    func showAlert(title: String, message: String) {
+        let alertController = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: .alert
+        )
+        alertController.addAction(
+            UIAlertAction(
+                title: "OK",
+                style: .default,
+                handler: nil)
+        )
+        self.present(alertController, animated: true)
     }
 }

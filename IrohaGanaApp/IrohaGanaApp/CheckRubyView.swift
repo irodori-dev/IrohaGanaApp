@@ -31,8 +31,6 @@ class CheckRubyView: UIView {
 
     @IBOutlet private weak var _rubyButton: UIButton!
 
-    @IBOutlet private weak var _countLabel: UILabel!
-
     @IBOutlet private weak var _outputTextArea: UIView!
 
     @IBOutlet private weak var _outputClearButton: UIButton!
