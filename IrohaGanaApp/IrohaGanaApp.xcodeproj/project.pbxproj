@@ -86,8 +86,7 @@
 				DCAD7CD423E851850091C2AE /* Main.storyboard */,
 				DC38CDA823EADE8B007B290D /* CheckRubyView.swift */,
 				DC38CDA623EADCEF007B290D /* CheckRubyView.xib */,
-				DC22011D23EC3C56006C12DB /* CoachMarkViewController.swift */,
-				DC22012123EC3CA3006C12DB /* CoarchMark.storyboard */,
+				DCC19E0023EFC4D100D0727C /* CoarchMark */,
 				DCB4994523EE748800A3D46F /* Log */,
 				DCAD7CD723E8519B0091C2AE /* Assets.xcassets */,
 				DCAD7CD923E8519B0091C2AE /* LaunchScreen.storyboard */,
@@ -110,6 +109,15 @@
 				DCB4994623EE74B600A3D46F /* IrohaGanaLog.swift */,
 			);
 			path = Log;
+			sourceTree = "<group>";
+		};
+		DCC19E0023EFC4D100D0727C /* CoarchMark */ = {
+			isa = PBXGroup;
+			children = (
+				DC22011D23EC3C56006C12DB /* CoachMarkViewController.swift */,
+				DC22012123EC3CA3006C12DB /* CoarchMark.storyboard */,
+			);
+			path = CoarchMark;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
