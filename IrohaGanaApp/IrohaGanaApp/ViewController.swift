@@ -81,9 +81,9 @@ class ViewController: UIViewController, RubyViewDelegate {
         self._checkRubyView.delegate = self
     }
     
-    private func _showAlert(title:String, message:String) {
+    private func _showAlert(title: String, message: String) {
         let alertController = UIAlertController(
-            title: "",
+            title: title,
             message: message,
             preferredStyle: .alert
         )
